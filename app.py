@@ -28,11 +28,6 @@ def about4():
     return render_template('about4.html')
 
 
-@app.route('/about5')
-def about5():
-    return render_template('about5.html')
-
-
 @app.route('/quizOverview')
 def quizOverview():
     return render_template('quizOverview.html')
