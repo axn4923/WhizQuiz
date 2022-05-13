@@ -51,5 +51,5 @@ Lastly, enter a browser of your choice and navigate to the specified URL.
 
 ## Developers  
 
-Anderson Nguyen - axn4923@txstate.edu  
+Anderson Nguyen - a_n307@txstate.edu  
 Terry Tosh - tmt103@txstate.edu  
