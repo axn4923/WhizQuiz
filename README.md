@@ -20,13 +20,13 @@ Python==3.10.4
 
 ## Initial Setup and Execution
 
+Commands below are Windows Shell commands. Commands may be slightly different for a Mac/Linux OS. 
+
 In order to run this website on your local machine. Please follow the instructions outlined below.  
 Make sure to have Python installed on your machine. This can be verified in the command prompt with:  
 > python --version  
 
-If Python is not installed, navigate to ***https://www.python.org/downloads/*** and install Python 3.10.4.
-
-## Commands below are Windows Shell commands. Commands may be slightly different for a Mac/Linux OS.  
+If Python is not installed, navigate to ***https://www.python.org/downloads/*** and install Python 3.10.4. 
 
 First, clone the repository on your system using git clone.  
 
