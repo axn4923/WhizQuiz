@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-color: #435165;
+    margin: 0;
+}
+
+.navtop {
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+   margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+    color: #eaebed;
+}
+body.loggedin {
+    background-color: #f3f4f7;
+}
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+  background-color: #fff;
+}
+.content > p table td, .content > div table td {
+  padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+  font-weight: bold;
+  color: #4a536e;
+  padding-right: 15px;
+}
+.content > div p {
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+
+:root{
+    --ghost-white: #1d2838;
+    --fire-bush: #1aa51a;
+    --granite-gray: #e6dcda;
+    --baltic-sea: #c4bfbe;
+    --trans: all 0.5s ease-in-out;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* resets and resuable stylings */
+/*
+img{
+    display: block;
+    width: 100%;
+}
+ */
+button{
+    cursor: pointer;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.text{
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+/* end of resets and reusable stylings  */
+
+/* header */
+header{
+    background-color: coral;
+}
+header .container{
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 100%;
+    padding: 1.5rem 1rem!important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1.5rem 0;
+    background: var(--ghost-white);
+    z-index: 999;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--granite-gray);
+    justify-self: flex-start;
+}
+.navbar-toggler{
+    justify-self: center;
+    border: none;
+    color: #fff;
+    background: var(--fire-bush);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1.5rem;
+    position: relative;
+}
+.navbar-collapse{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+/* js related class */
+.show-navbar{
+    height: 204px;
+}
+/*  */
+.navbar-collapse ul{
+    list-style-type: none;
+}
+.navbar-collapse li{
+    margin: 0.7rem 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.navbar-collapse a{
+    font-size: 1.15rem;
+    opacity: 0.7;
+}
+
+
+/* banner  */
+.banner{
+    flex: 1;
+    padding-top: 6rem;
+    text-align: center;
+}
+.banner > div{
+    margin: 3rem 0;
+}
+.banner .text{
+    font-weight: 500;
+    font-size: 1.75rem;
+    opacity: 0.45;
+}
+.btns{
+    margin: 1.5rem 0;
+}
+.btn{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid var(--fire-bush);
+    background: var(--fire-bush);
+    color: #fff;
+    padding: 0.95rem 0;
+    letter-spacing: 2px;
+    display: block;
+    width: 180px;
+    margin: 0.6rem auto;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.btns .btn:last-child{
+    color: var(--fire-bush);
+    background: transparent;
+}
+.btns .btn:first-child:hover{
+    background: transparent;
+    color: var(--fire-bush);
+}
+.btns .btn:last-child:hover{
+    background: var(--fire-bush);
+    color: #fff;
+}
+
+footer{
+    background-color: var(--baltic-sea);
+}
+.footer-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://chewtown.com/uploads/2015/01/14224326/Gluten-Free-Chocolate-Ganace-Cake-Top.jpg) center/cover no-repeat;
+    padding: 3rem 0;
+}
+.footer-banner{
+    color: #fff;
+    text-align: center;
+}
+.footer-banner h2{
+    font-size: 2.4rem;
+}
+.footer-banner .btn{
+    margin-top: 2rem;
+}
+.footer-banner .btn:hover{
+    background: #fff;
+    color: var(--fire-bush);
+    background: transparent;
+}
+footer > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons{
+    display: flex;
+    padding: 3rem 0;
+}
+.social-icons a{
+    color: var(--granite-gray);
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.25rem;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.social-icons a:hover{
+    color: #fff;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (min-width: 480px){
+    /* header */
+    .btns button{
+        display: inline-block;
+    }
+    .btns button:first-child{
+        margin-right: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 680px){
+    .navbar{
+        padding: 1.5rem 3rem!important;
+    }
+
+
+@media screen and (min-width: 992px){
+    .navbar{
+        padding: 1.5rem 6rem!important;
+    }
+    .cart-container{
+        right: 6rem;
+    }
+    .banner{
+        padding-top: 0;
+        display: compact;
+        grid-template-columns: 50% 50%;
+        align-content: center;
+    }
+    .banner-content{
+        text-align: left;
+    }
+
+    .footer-banner{
+        text-align: left;
+    }
+    .footer-banner .text{
+        width: 60%;
+    }
+    .footer-banner .btn{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .navbar{
+        padding: 1.5rem 14rem!important;
+    }
+    .cart-container{
+        right: 14rem;
+    }
+    .banner-content h1{
+        font-size: 3.5rem;
+    }
+
+}
+
+section {
+  position: relative;
+  width: 806px;
+  margin: 0 auto;
+  z-index: 0;
+  color: white;
+}
+
+section:after {
+  content: 'Developers';
+  position: absolute;
+  left: 0;
+  top: 38px;
+  width: 100%;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #5E6B7F;
+  padding: 40px 0;
+}
+
+button {
+  cursor: pointer;
+  width: 199px;
+  display: inline-block;
+  background-color: #5E6B7F;
+  color: white;
+  text-align: center;
+  transition: .25s ease;
+  border: none;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+}
+
+div:focus button, button:focus {
+  background-color: #8DA1BF;
+  outline: none;
+}
+
+button:focus + p, div:focus P {
+  display: block;
+  position: absolute;
+  background-color: #8DA1BF;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  outline: none;
+  top: 0px;
+  text-align: center;
+  padding-top: 48px;
+}
+
+p1 {
+  display: none;
+  font-size: 2em;
+}
+
+div {
+  display: inline-block;
+}
+
+div:focus {
+  outline: none;
+}
+
+body {
+  padding: 3em;
+}
+
+.p {
+  margin-top: 300px;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.quizButton {
+    display: block;
+    text-decoration-color: green;
+    border-radius: 50%;
+}
